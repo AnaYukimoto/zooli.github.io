@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  grid-area: header;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.models {
+  display: none;
+}
+
+.menu-openner {
+  margin-right: 15px;
+  font-size: 30px;
+  padding: 1px 30px;
+  cursor: pointer;
+  color: rgb(254, 1, 130);
+}
+
+.menu-openner span {
+  margin-right: 10px;
+}
+
+.menu-closer {
+  width: 32px;
+  height: 32px;
+  display: none;
+  font-size: 30px;
+}
+
+aside {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 15px rgb(207, 206, 206);
+  width: 0vw;
+  transition: all ease .2s;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+aside.show {
+  width: 30vw;
+}
+
+.cart--area {
+  padding: 20px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.models-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.models-item {
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.models-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.models-item img {
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.models-item--add {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: rgb(13, 184, 254);
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  margin-top: -25px;
+  transition: all ease.2s;
+}
+
+.models-item--add:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.models-item price {
+  text-align: center;
+}
+
+.models-item--name {
+  text-align: center;
+  font-size: 15px;
+  color: #000;
+  margin-top: 10px;
+}
+
+.models-item--desc {
+  text-align: justify;
+  color: #2e2e2e;
+  margin-top: 10px;
+}
+
+.modelsWindowArea {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  display: none;
+  transition: all ease .5s;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.modelsWindowBody {
+  width: 900px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgb(207, 206, 206);
+  display: flex;
+  margin: 20px 0;
+}
+
+.modelsBig {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modelsBig--back {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.modelsInfo {
+  flex: 1;
+  padding: 50px;
+}
+
+.modelsInfo h1 {
+  margin-top: 20px;
+}
+
+.modelsInfo--desc {
+  font-size: 15px;
+  text-align: justify;
+  color: #363636;
+}
+
+.modelsInfo--sector {
+  color: #302f2f;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.modelsInfo--price {
+  display: flex;
+  align-items: center;
+  color: rgb(254, 1, 130);
+}
+
+.modelsInfo--actualPrice {
+  font-size: 28px;
+  margin-right: 30px;
+}
+
+.modelsInfo--qtarea {
+  display: inline-flex;
+  background-color: #EEE;
+  border-radius: 10px;
+  height: 30px;
+  
+}
+
+.modelsInfo--qtarea button {
+  border: 0;
+  background-color: transparent;
+  font-size: 17px;
+  outline: 0;
+  cursor: pointer;
+  padding: 0 10px;
+  color: #333;
+}
+
+.modelsInfo--qt {
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 5px;
+  color: #000;
+  
+}
+
+.modelsInfo--addButton {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(13, 184, 254);
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.modelsInfo--addButton:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.modelsInfo--cancelButton {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.modelsInfo--cancelMobileButton {
+  display: none;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.cart {
+  margin-bottom: 20px;
+}
+
+.cart--item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.cart--item--nome {
+  flex: 1;
+}
+
+.cart--item--qtarea {
+  background-color: #EEE;
+  border-radius: 10px;
+  height: 20%;
+  width:15%;
+  text-align:center;
+  padding:5px;
+  margin-left:5%;
+}
+
+.cart--item--qtarea button {
+  border: 0;
+  background-color: transparent;
+  font-size: 17px;
+  outline: 0;
+  cursor: pointer;
+  padding: 0 10px;
+  color: #333;
+}
+
+.cart--item--qt {
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 5px;
+  color: #000;
+}
+
+.none {
+  display: none;
+}
+
+.cart--totalItem {
+  padding: 15px 0;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.cart--totalItem span:first-child {
+  font-weight: bold;
+}
+
+.cart--totalItem.big {
+  font-weight: bold;
+}
+
+.cart--finalizar {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 20px;
+  background-color: rgb(254, 1, 130);
+  color: #FFF;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  border: none;
+}
+
+.Calculando {
+  padding: 10px 5px;
+  border-radius: 20px;
+  background-color: rgb(13, 184, 254);
+  color: #FFF;
+  cursor: pointer;
+  text-align: center;
+  transition: all ease .2s;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.Aplicar {
+  padding: 10px 5px;
+  border-radius: 20px;
+  background-color: rgb(13, 184, 254);
+  color: #FFF;
+  cursor: pointer;
+  text-align: center;
+  transition: all ease .2s;
+  width: 50%;
+  margin-left: 25%;
+  margin-top:5%;
+  margin-bottom:5%;
+  outline: none;
+  border: none; 
+  font-size:17px;
+}
+
+
+.cart--finalizar:hover {
+  transform: scale(1.1, 1.1);
+}
+
+@media (max-width: 1000px) {
+  .models-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10%;
+  }
+
+  .models-item {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+@media (max-width: 840px) {
+  body {
+    flex-direction: column;
+  }
+
+  .models-area {
+    display: block;
+  }
+
+  header {
+    display: flex;
+  }
+
+  main {
+    padding-top: 60px;
+  }
+
+  aside {
+    width: auto;
+    position: fixed;
+    left: 100vw;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease .2s;
+  }
+
+  aside.show {
+    width: auto;
+  }
+
+  .cart--area {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .menu-closer {
+    display: block;
+  }
+
+  .modelsWindowArea {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .modelsWindowBody {
+    width: 100vw;
+    display: block;
+    padding: 28px;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .modelsInfo h1 {
+    margin-top: 20px;
+  }
+
+  .modelsInfo--qtarea {
+    height: 60px;
+  }
+
+  .modelInfo--qtarea button {
+    font-size: 25px;
+    padding: 0 25px;
+  }
+
+  .modelInfo--qt {
+    line-height: 60px;
+    font-size: 20px;
+  }
+
+  .modelsInfo--addButton {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+  }
+
+  .modelsInfo--cancelButton {
+    display: none;
+  }
+
+  .modelsInfo--cancelButton {
+    display: block;
+  }
+}
+.input-group input,
+.input-group select{
+    width: 100%;
+    height: 47px;
+    background-color: rgba(167, 166, 164, 0.089);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 13px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+.input-group input:focus{
+    border-color: rgba(254, 1, 161, 0.26);
+}
+.input-group select:focus{
+    border-color: rgba(254, 1, 161, 0.26);
+}
+.input-group select{
+    padding:1%;
+}

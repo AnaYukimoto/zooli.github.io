@@ -1,0 +1,82 @@
+/* Área da mensagem */
+
+h2{
+  padding:20px 0 0 20px;
+  font-size: 14px;
+}
+.mensagem {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  .mensagem:hover {
+    background-color: rgb(13, 184, 254);
+  }
+  
+  .mensagem h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .mensagem p {
+    font-size: 14px;
+    margin: 5px;
+    color: #505050;
+  }
+  
+  
+  #formulario-container form {
+    display: flex;
+    flex-direction: column;
+    margin:0 80px 20px 80px;
+    padding: 3%;
+    border-radius: 20px;
+    background-color: #ffffff8f ;
+    box-shadow: 0 2px 5px 2px hsla(30, 1%, 68%, 0.31);
+  }
+  
+  #formulario-container form label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  
+  #formulario-container form button {
+    width: 20%;
+    height: 50px;
+    padding: 20px;
+    border: none;
+    background-color: rgb(13, 184, 254);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0 0 0 40%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+  }
+  #formulario-container form button:hover {
+    transform: scale(1.1, 1.1);
+
+}
+  
+  /* Adiciona um ícone de envio ao botão do formulário */
+  #formulario-container form button:before {
+    content: "\f1d8";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 8px;
+  }
+  
+  /* Define o estilo do ícone */
+  #formulario-container form button:before {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  /* Adiciona o Font Awesome ao cabeçalho do documento */
+  

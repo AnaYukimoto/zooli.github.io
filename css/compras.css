@@ -1,0 +1,58 @@
+/*PARTE DE COMPRAS DOS PRODUTOS*/
+
+table {
+    border-collapse: collapse;
+    margin-top:15vh;
+    border-radius:20px;
+    box-shadow: 0 2px 5px 2px hsla(30, 1%, 68%, 0.31);
+}
+
+th {
+    background-color:rgb(255, 215, 20);
+    color: #333;
+    padding: 8px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff8f ;
+    backdrop-filter: blur(40px);
+}
+.w50{
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+}
+.w60{
+    width: 87%;
+    float: left;
+    padding-right: 10px;
+}
+.input-group input{
+    width: 100%;
+    height: 47px;
+    background-color: rgba(167, 166, 164, 0.089);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 13px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+.input-group input:focus{
+    border-color: rgba(254, 1, 161, 0.26);
+}
+
+@media (max-width: 768px) {
+    .buttonCep{
+        width: 100%;
+    }
+    .input-group input {
+        width: 123%;
+    }
+}

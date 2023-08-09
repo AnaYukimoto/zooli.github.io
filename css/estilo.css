@@ -1,0 +1,180 @@
+/* ---------------------CORES PRINCIPAIS ----------------------
+
+   AMARELO =  rgb(255, 215, 20); ou  #FFD714
+   AZUL = rgb(13, 184, 254); ou #0DB8FE
+   ROSA = rgb(254, 1, 130);
+   
+   ------------------------------------------------------------
+*/
+*{margin:0; padding:0; box-sizing:border-box;}
+
+body {font-family: "Poppins", sans-serif; font-size:16px; }
+
+.content, .header-content {margin:0 auto; width:85%; max-width:1200px;}
+
+main {margin-top:125px;}
+
+img {max-width: 100%; height:auto; }
+
+h2{
+	color:rgb(254, 1, 162);
+	line-height: 1.2;
+}
+
+h1 {margin-bottom: 25px;font-size: 30px; color:black; text-align: center;}
+
+/************************************************************* 
+** HEADER e NAV
+**************************************************************/
+
+.responsive-bar{display: none;}
+
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:58px;
+    transition:.2s;
+    background: rgb(255, 215, 20);
+    z-index: 2;
+    box-shadow: 0  0 3px 5px  rgba(31, 30, 29, 0.096);
+}
+
+
+header .logo {float: left;}
+header .logo img {height: 100%; width: 100%; max-width: 300px; padding:5px; margin: 5%; transition:.2s; }
+
+
+header nav ul {float:right; display:flex;}
+
+header nav ul li {list-style: none;}
+
+header nav ul li a {display:block; padding:10px 10px; color:#000000; text-decoration: none;
+    text-transform: uppercase; font-size: 16px; transition:.2s;}
+header nav ul li a:hover {color:white; }
+
+.header-content {margin: 0 auto; padding:5px 0; width:85%;}
+
+
+.barra-topo {background:rgb(255, 215, 20); padding:6px 0;}
+.barra-topo.off {display:none;}
+
+.current-menu-item, .current-menu-item a:visited {font-weight: 700;}
+
+
+/************************************************************* 
+** HOME
+**************************************************************/
+
+.home-intro {margin: 0 auto; padding:60px 0;}
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+@media screen and (max-width:768px) {
+
+	.content, .header-content {width:94%;}
+	.content2 {width:80%;}
+
+	/********** HEADER e NAV **********/
+	
+	.responsive-bar{display: block; 
+		width:100%; 
+		position: fixed;
+		padding:5px 20px; 
+		height:60px; 
+		top:0; 
+		left:0; 
+		background:rgb(255, 215, 20); 
+		z-index:3;
+	}
+	.responsive-bar .logo img{float:left; height: auto; width: auto; max-width: 300px; padding-top:10px;}
+
+	.responsive-bar .menu h1 {float: right; color:rgb(254, 1, 162); font-size:35px;}
+
+	header {height:60px;}
+
+	header.black {background: #000; height:60px}
+	header .logo img {display: none;}
+
+	header nav ul {
+		position: absolute;
+		width:100%;
+		top:60px;
+		left:0;
+		float:none;
+		display:none;
+		background: rgb(255, 215, 20);
+		padding-top:0;
+	}
+
+	header nav ul.active {display: block; }
+
+	header nav ul li {width:100%;}
+
+	header nav ul li a {
+		display: block;
+		padding: 20px 0;
+		width: 100%;
+        padding-left:5%;
+	}
+
+	header nav ul li a:hover {background:rgb(255, 190, 20);}
+
+
+	/********** HOME **********/
+
+	main {margin-top:60px;}
+	.banner {margin-top:0; height:485px;}
+	.banner-content {width:44%; margin-left:4%;}
+ }
+
+.cadastro{
+	color: white;
+}
+.cadastro:hover{
+	color: black;
+}
+
+.buttonBx{
+    width: 50%;
+    height: 47px;
+    background: rgb(254, 1, 130);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin: 5% 0 5% 25%;
+    color: white;
+    font-size: 15px;
+	cursor: pointer;
+}
+.buttonBx:hover {
+    transform: scale(1.1, 1.1);
+    
+}
+input[type='submit'] {
+    display: none;
+  
+}
+.buttonInput{
+    cursor: pointer;
+
+}
+.PerfilCuidador
+{
+	padding-bottom: 10px;
+}
+

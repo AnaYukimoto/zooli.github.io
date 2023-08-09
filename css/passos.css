@@ -1,0 +1,54 @@
+.timeline {
+  background-image: linear-gradient(to right, rgb(13, 173, 236), rgb(13, 184, 254),rgb(13, 173, 236));
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline2 {
+  width: 20%;
+  float: left;
+  margin-left: 1%;
+}
+
+.passos2 {
+  margin: 5% auto;
+  color: rgb(254, 1, 162);
+}
+
+h3 {
+  padding: 2% 0 1% 0;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(to right, rgb(13, 173, 236), rgb(13, 184, 254),rgb(13, 173, 236));
+}
+
+h4 {
+  color: white;
+  line-height: 1.2;
+  font-size: 20px;
+}
+
+p {
+  color: black;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .timeline {
+    flex-wrap: wrap;
+    
+  }
+
+  .timeline2 {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+  .passos2 {
+    margin: 0 10%  0 10%;
+  }
+}

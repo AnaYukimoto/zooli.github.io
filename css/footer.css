@@ -1,0 +1,152 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+}
+.icones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.icone {
+  margin: 0 0 0 10px;
+  cursor: pointer;
+  width: 2%;
+  height: 2%;
+}
+.icone:hover {
+  transform: scale(1.1, 1.1);
+  
+}
+/* Responsivo */
+@media (max-width: 600px) {
+	.icone{
+		width: 5%;
+		height: 5%;
+	}
+}
+a{
+    text-decoration: none;
+}
+.site-footer
+{
+  background-color:rgb(255, 215, 20);
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  box-shadow: 0  0 3px 5px  rgba(31, 30, 29, 0.096);
+}
+.site-footer hr
+{
+    color: white;
+    border-color: white;
+    background-color: white;
+}
+
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#000000;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:rgb(254, 1, 130);
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.copyright-text
+{
+    text-align: center;
+    margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+.col-md-3 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .col-md-3 {
+    float: left;
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-xs-6 {
+    float: left;
+    width: 50%;
+  }
+}
+.col-sm-12,
+.col-md-6 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 100%;
+  }
+}
+
