@@ -12,15 +12,15 @@ O objetivo principal deste projeto é fornecer uma plataforma unificada que aten
 
 ## Cores Principais
 
-- Amarelo: ![Amarelo](https://via.placeholder.com/15/000000/000000?text=+) `#000000`
-- Rosa: ![Rosa](https://via.placeholder.com/15/FF69B4/000000?text=+) `#FF69B4`
-- Azul: ![Azul](https://via.placeholder.com/15/FF69B4/000000?text=+) `#FF69B4`
+- Amarelo: ![Amarelo](https://via.placeholder.com/15/FFD714/000000?text=+) `#FFD714`
+- Rosa: ![Rosa](https://via.placeholder.com/15/0DB8FE/000000?text=+) `#0DB8FE`
+- Azul: ![Azul](https://via.placeholder.com/15/FE0182/000000?text=+) `#FE0182`
 
 As cores principais do projeto são amarelo, rosa e azul, refletindo uma combinação de elegância e modernidade, além de transmitir uma sensação de calor e conexão emocional com os animais de estimação.
 
 ## Imagem do Projeto
 
-![Imagem do Projeto de TCC](./imgZooli)
+![Imagem do Projeto de TCC](./imgZooli.png)
 
 ## Acesso ao Projeto
 
