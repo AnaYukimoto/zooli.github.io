@@ -1,6 +1,6 @@
 # Projeto de TCC: Plataforma de Cuidadores de Animais e Produtos de Tecnologia
 
-Bem-vindo ao repositório do projeto de TCC! Esta é uma plataforma responsiva e desenvolvida como parte do Trabalho de Conclusão de Curso (TCC) de julho de 2023, de Técnico em Desenvolvimento de Sistemas que visa oferecer uma solução abrangente para os donos de animais de estimação. O projeto consiste em um site que disponibiliza cuidadores de animais de estimação, uma variedade de produtos de tecnologia para facilitar a vida dos donos de animais.
+Bem-vindo ao repositório da versão beta do projeto de TCC! Esta é uma plataforma responsiva e desenvolvida como parte do Trabalho de Conclusão de Curso (TCC) de julho de 2023, de Técnico em Desenvolvimento de Sistemas que visa oferecer uma solução abrangente para os donos de animais de estimação. O projeto consiste em um site que disponibiliza cuidadores de animais de estimação, uma variedade de produtos de tecnologia para facilitar a vida dos donos de animais.
 
 ## Objetivos do Projeto
 
